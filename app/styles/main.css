@@ -1,0 +1,152 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+}
+
+/* Space out content a bit */
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom : 1px solid #e5e5e5;
+    background : black;
+}
+
+.headerText{
+    color:black;
+}
+
+/*.headerBg1{
+    background:red;
+    width:50%;
+    position:absolute;
+}
+
+.headerBg2{
+    background:green;
+    width:25%;
+    position:absolute;
+}
+
+.headerBg3{
+    background:yellow;
+    width:25%;
+    position:absolute;
+}*/
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+                
+                /* From here I start */
+                
+.main{
+    text-align:center;
+    width : 100%;
+}
+                
+section{
+    margin-bottom:-4%;  
+}
+                
+.moiContent{
+    padding-top : 20%;
+}
+                
+#main_poster{
+background:black;
+}
+                
+#developer{
+background:red;
+}
+                
+#blogger{
+    background:green;
+}
+                
+#artist{
+    background-image:none;
+    background-size:cover;
+}
+
+.container{
+    padding-right: 0px;
+    padding-left : 0px;
+    width : 100%;
+}
+#myImage{
+    width : 25%;
+    border-radius:50%;
+}
+
+h1{
+    text-align:center;
+}
+
+.appBody{
+    background-image:url("../images/artist_bg.JPG");
+    background-attachment:fixed;
+    background-size:cover;
+}
+                
+.moiLabels{
+    padding : 2%;
+    font-weight:bold;
+    -webkit-transition: 0.5s ease-in-out;
+}
+                
+.moiLabels:hover{
+    -webkit-transform:translateY(-10%) scale(1.1);
+}
