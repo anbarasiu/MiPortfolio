@@ -1,152 +1,322 @@
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
+@import url(http://fonts.googleapis.com/css?family=Denk+One|Open+Sans+Condensed:300);
+/* line 4, ../compass/sass/main.scss */
+body {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* Space out content a bit */
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+/* line 10, ../compass/sass/main.scss */
+.main {
+  text-align: center;
+  width: 100%;
 }
 
-/* Custom page header */
-.header {
-    border-bottom : 1px solid #e5e5e5;
-    background : black;
+/* line 15, ../compass/sass/main.scss */
+section {
+  margin: 2%;
+  height: 100%;
+  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
 }
 
-.headerText{
-    color:black;
+/* line 21, ../compass/sass/main.scss */
+img {
+  max-width: 64px;
 }
 
-/*.headerBg1{
-    background:red;
-    width:50%;
-    position:absolute;
+/* line 25, ../compass/sass/main.scss */
+a {
+  color: olive;
+  font-weight: bold;
 }
 
-.headerBg2{
-    background:green;
-    width:25%;
-    position:absolute;
+/* line 30, ../compass/sass/main.scss */
+a:hover {
+  text-decoration: none;
 }
 
-.headerBg3{
-    background:yellow;
-    width:25%;
-    position:absolute;
-}*/
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+/* Main Section -- Start */
+/* line 36, ../compass/sass/main.scss */
+.moiLabels, .moiImage, .aboutMeContainer {
+  padding: 2.5% 0 2.5% 0;
 }
 
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+/* line 40, ../compass/sass/main.scss */
+.developerLabel {
+  margin: -2.5% 0 2.5% 0;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
+/* line 44, ../compass/sass/main.scss */
+.arrow {
+  background: olive;
+  border-radius: 45%;
+  opacity: 0.5;
+  width: 44px;
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
+/* line 51, ../compass/sass/main.scss */
+.arrow:hover {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 2s 0;
+  -webkit-transition-delay: ease-in-out;
+  -moz-transition: -moz-transform 2s 0 ease-in-out;
+  -o-transition: -o-transform 2s 0 ease-in-out;
+  transition: transform 2s 0 ease-in-out;
 }
 
-.marketing p + h4 {
-    margin-top: 28px;
+/* line 57, ../compass/sass/main.scss */
+#main_poster {
+  background: rgba(0, 0, 0, 0.85);
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
-}
-                
-                /* From here I start */
-                
-.main{
-    text-align:center;
-    width : 100%;
-}
-                
-section{
-    margin-bottom:-4%;  
-}
-                
-.moiContent{
-    padding-top : 20%;
-}
-                
-#main_poster{
-background:black;
-}
-                
-#developer{
-background:red;
-}
-                
-#blogger{
-    background:green;
-}
-                
-#artist{
-    background-image:none;
-    background-size:cover;
+/* line 61, ../compass/sass/main.scss */
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
 }
 
-.container{
-    padding-right: 0px;
-    padding-left : 0px;
-    width : 100%;
-}
-#myImage{
-    width : 25%;
-    border-radius:50%;
+/* line 67, ../compass/sass/main.scss */
+#myImage {
+  width: 15%;
+  border-radius: 50%;
 }
 
-h1{
-    text-align:center;
+/* line 72, ../compass/sass/main.scss */
+moiLabels {
+  text-align: center;
 }
 
-.appBody{
-    background-image:url("../images/artist_bg.JPG");
-    background-attachment:fixed;
-    background-size:cover;
+/* line 76, ../compass/sass/main.scss */
+.appBody {
+  background-image: url("../images/carpetBg.JPG");
+  background-attachment: fixed;
+  background-size: cover;
 }
-                
-.moiLabels{
-    padding : 2%;
-    font-weight:bold;
-    -webkit-transition: 0.5s ease-in-out;
+
+/* line 82, ../compass/sass/main.scss */
+.moiLabels:hover {
+  -webkit-transform: translateY(-10%) scale(1.1);
+  -moz-transform: translateY(-10%) scale(1.1);
+  -ms-transform: translateY(-10%) scale(1.1);
+  -o-transform: translateY(-10%) scale(1.1);
+  transform: translateY(-10%) scale(1.1);
+  -webkit-transition: -webkit-transform 1s 0;
+  -webkit-transition-delay: ease-in-out;
+  -moz-transition: -moz-transform 1s 0 ease-in-out;
+  -o-transition: -o-transform 1s 0 ease-in-out;
+  transition: transform 1s 0 ease-in-out;
 }
-                
-.moiLabels:hover{
-    -webkit-transform:translateY(-10%) scale(1.1);
+
+/* line 87, ../compass/sass/main.scss */
+.moiImage {
+  background: url("../images/moi.jpg");
+  background-color: rgba(255, 255, 255, 0.25);
+  background-size: 40%;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  height: 250px;
+  flex: 2;
 }
+
+/* line 97, ../compass/sass/main.scss */
+.moiContent {
+  height: 100%;
+}
+
+/* Main Section -- Start */
+/* Crafts Section -- Start */
+/* line 105, ../compass/sass/main.scss */
+#crafts {
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+/* line 116, ../compass/sass/main.scss */
+#crafts article {
+  flex: 1;
+}
+
+/* line 120, ../compass/sass/main.scss */
+.row {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-align-items: center;
+  -align-items: center;
+  padding: 4%;
+}
+
+/* line 132, ../compass/sass/main.scss */
+#words {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-align-items: center;
+  -align-items: center;
+}
+
+/* line 143, ../compass/sass/main.scss */
+.moduleHeading {
+  color: olive;
+  font-size: 3.5rem;
+  font-family: 'Denk One', sans-serif;
+}
+
+/* line 149, ../compass/sass/main.scss */
+#crafts .moduleHeading {
+  font-size: 3rem;
+}
+
+/* line 153, ../compass/sass/main.scss */
+#words .moduleHeading {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 0;
+  -transform-origin: 0;
+  /*color : rgba(0,255,0,0.4);*/
+}
+
+/* line 160, ../compass/sass/main.scss */
+#code {
+  border-left: solid 4px rgba(128, 128, 0, 0.6);
+  border-radius: 10%;
+}
+
+/* line 165, ../compass/sass/main.scss */
+#pix .moduleHeading {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0;
+}
+
+/* line 170, ../compass/sass/main.scss */
+#connect {
+  border-top: solid 4px rgba(128, 128, 0, 0.6);
+  border-radius: 10%;
+}
+
+/* line 175, ../compass/sass/main.scss */
+#upArrow {
+  margin-top: -2%;
+}
+
+/* line 179, ../compass/sass/main.scss */
+.moduleContent {
+  line-height: 2em;
+}
+
+/* line 183, ../compass/sass/main.scss */
+.linksContainer {
+  text-align: center;
+}
+
+/* line 187, ../compass/sass/main.scss */
+.arrowContainer {
+  text-align: center;
+}
+
+/* Links Hover */
+/* line 193, ../compass/sass/main.scss */
+.wordpress:hover {
+  color: #7B7B7B;
+}
+
+/* line 197, ../compass/sass/main.scss */
+.blogger:hover {
+  color: #FF8B41;
+}
+
+/* line 201, ../compass/sass/main.scss */
+.twitter:hover {
+  color: #7ADDFC;
+}
+
+/* line 205, ../compass/sass/main.scss */
+.github:hover {
+  color: #047FB2;
+}
+
+/* line 209, ../compass/sass/main.scss */
+.linkedin:hover {
+  color: #047FB2;
+}
+
+/* line 213, ../compass/sass/main.scss */
+.flickr:hover {
+  color: #E9E9E9;
+}
+
+/* line 217, ../compass/sass/main.scss */
+.tumbhi:hover {
+  color: #4B7093;
+}
+
+/* line 221, ../compass/sass/main.scss */
+.love:hover {
+  color: #C30201;
+}
+
+/* Links Hover */
+/* Responsive */
+@media (max-width: 650px) {
+  /* line 230, ../compass/sass/main.scss */
+  .moiImage {
+    height: 150px;
+  }
+
+  /* line 234, ../compass/sass/main.scss */
+  body {
+    font-size: 1.75rem;
+  }
+
+  /* line 238, ../compass/sass/main.scss */
+  .moduleHeading {
+    font-size: 2rem;
+  }
+
+  /* line 242, ../compass/sass/main.scss */
+  #crafts {
+    font-size: 1.5rem;
+  }
+
+  /* line 246, ../compass/sass/main.scss */
+  #crafts .moduleHeading {
+    font-size: 2rem;
+  }
+}
+/* Responsive */
+/* Crafts Section -- End */

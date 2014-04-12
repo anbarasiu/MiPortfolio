@@ -1,0 +1,254 @@
+@import 'compass/css3';
+@import url(http://fonts.googleapis.com/css?family=Denk+One|Open+Sans+Condensed:300);
+
+body{
+    color: rgba(255,255,255,0.75);
+    font-size : 2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main{
+    text-align:center;
+    width : 100%;
+}
+                
+section{
+    margin:2%;  
+    height : 100%;
+    border-bottom : solid rgba(255,255,255,0.5) 1px;
+}
+
+img{
+    max-width : 64px;
+}
+
+a{
+    color : olive;
+    font-weight : bold;
+}
+
+a:hover{
+    text-decoration : none;
+}
+
+/* Main Section -- Start */      
+
+.moiLabels, .moiImage, .aboutMeContainer{
+    padding : 2.5% 0 2.5% 0;
+}
+
+.developerLabel{
+    margin: -2.5% 0 2.5% 0;
+}
+
+.arrow{
+    background: olive;
+    border-radius: 45%;
+    opacity: 0.5;
+    width: 44px;
+}
+
+.arrow:hover{
+    opacity : 1;
+    @include transform(rotate(360deg));
+    @include transition(transform 2s 0 ease-in-out);
+}
+
+#main_poster{
+    background:rgba(0,0,0,0.85);
+}
+
+.container{
+    padding-right: 0px;
+    padding-left : 0px;
+    width : 100%;
+}
+                
+#myImage{
+    width : 15%;
+    border-radius:50%;
+}
+
+moiLabels{
+    text-align:center;
+}
+
+.appBody{
+    background-image:url("../images/carpetBg.JPG");
+    background-attachment:fixed;
+    background-size:cover;
+}
+                
+.moiLabels:hover{
+    @include transform(translateY(-10%) scale(1.1));
+    @include transition(transform 1s 0 ease-in-out);
+}
+
+.moiImage{
+    background: url("../images/moi.jpg");  
+    background-color : rgba(255,255,255, 0.25);
+    background-size : 40%;
+    background-position : center 0%;
+    background-repeat : no-repeat;
+    height : 250px;
+    flex : 2;
+}
+
+.moiContent{
+    height : 100%;
+}
+
+/* Main Section -- Start */  
+                
+/* Crafts Section -- Start */  
+
+#crafts{
+    background : rgba(0,0,0,0.8);
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    flex-direction : column;
+    font-size : 1.8rem;
+}
+
+#crafts article{
+    flex : 1;
+}
+
+.row{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    
+    -webkit-align-items : center;
+    -align-items : center;
+    padding : 4%;
+}
+
+#words{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    
+    -webkit-align-items : center;
+    -align-items : center;
+}
+
+.moduleHeading{
+    color : olive;
+    font-size : 3.5rem;
+    font-family: 'Denk One', sans-serif;
+}
+
+#crafts .moduleHeading{
+    font-size : 3rem;
+}
+
+#words .moduleHeading{
+     @include transform(rotate(270deg));
+    -webkit-transform-origin : 0;
+    -transform-origin : 0;
+    /*color : rgba(0,255,0,0.4);*/
+}
+
+#code{
+    border-left : solid 4px rgba(128,128,0,0.6);
+    border-radius : 10%;
+}
+
+#pix .moduleHeading{
+     @include transform(rotate(90deg));
+    -webkit-transform-origin : 0;
+}
+
+#connect{
+    border-top : solid 4px rgba(128,128,0,0.6);
+    border-radius : 10%;
+}
+
+#upArrow{
+    margin-top : -2%;
+}
+
+.moduleContent{
+    line-height : 2em;
+}
+
+.linksContainer{
+    text-align : center;
+}
+
+.arrowContainer{
+    text-align : center;
+}
+
+/* Links Hover */
+
+.wordpress:hover{
+    color : #7B7B7B;
+}
+
+.blogger:hover{
+    color : #FF8B41;
+}
+
+.twitter:hover{
+    color : #7ADDFC;
+}
+
+.github:hover{
+    color : #047FB2;
+}
+
+.linkedin:hover{
+    color : #047FB2;
+}
+
+.flickr:hover{
+    color : #E9E9E9;
+}
+
+.tumbhi:hover{
+    color : #4B7093;
+}
+
+.love:hover{
+    color : #C30201;
+}
+
+/* Links Hover */
+
+/* Responsive */ 
+
+@media (max-width : 650px){
+    .moiImage{
+          height : 150px; 
+    }
+
+    body{
+        font-size : 1.75rem;
+    }
+
+    .moduleHeading{
+        font-size : 2rem;
+    }
+
+    #crafts{
+        font-size : 1.5rem;
+    }
+
+    #crafts .moduleHeading{
+        font-size : 2rem;
+    }   
+
+}
+
+/* Responsive */ 
+
+/* Crafts Section -- End */  

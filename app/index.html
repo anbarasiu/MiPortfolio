@@ -19,16 +19,20 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="miPortfolioApp" class = "appBody">
+  <body ng-app="miPortfolioApp" class = "appBody" ng-controller = "AppCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-include="'views/main.html'" ng-controller="MainCtrl">
+    <div class="main" ng-include="'scripts/Main/main.tmpl.html'" ng-controller="MainCtrl">
       
       </div>
-
+      
+      <div class="container" ng-include="'scripts/Crafts/crafts.tmpl.html'" ng-controller="CraftsCtrl"  >
+      
+      </div>
+      
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -59,7 +63,9 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
       <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+       <script src="scripts/appCtrl.js"></script>
+<script src="scripts/Main/mainCtrl.js"></script>
+      <script src="scripts/Crafts/craftsCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>
